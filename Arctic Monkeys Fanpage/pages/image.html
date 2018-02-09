@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Arctic Monkeys Fanpage</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/normalize.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/image.css">
+	
+	<!--Use of JavaScript for the rollover - OBS: The rollover using backgroung image didn't work!-->
+<SCRIPT language="JavaScript">
+<!--
+
+  if (document.images)
+   {
+     pic1on= new Image(100,25);
+     pic1on.src="../images/ph1.jpg";  
+     pic2on= new Image(100,25);
+     pic2on.src="../images/ph2.jpg";
+	 pic3on= new Image(100,25);
+     pic3on.src="../images/ph3.jpg";
+	 pic4on= new Image(100,25);
+     pic4on.src="../images/ph4.jpg";
+	 
+     pic1off= new Image(100,25);
+     pic1off.src="../images/photo1.jpg";
+     pic2off= new Image(100,25);
+     pic2off.src="../images/photo2.jpg";
+	 pic3off= new Image(100,25);
+     pic3off.src="../images/photo3.jpg";
+	 pic4off= new Image(100,25);
+     pic4off.src="../images/photo4.jpg";
+   }
+
+function lightup(imgName,imgName2,imgName3,imgName4,imgName5,imgName6)
+ {
+   if (document.images)
+    {
+      imgOn=eval(imgName + "on.src");
+      document[imgName].src= imgOn;
+      imgOn2=eval(imgName2 + "on.src");
+      document[imgName2].src= imgOn2;
+	  imgOn3=eval(imgName3 + "on.src");
+      document[imgName3].src= imgOn3;
+	  imgOn4=eval(imgName4 + "on.src");
+      document[imgName4].src= imgOn4;
+    }
+ }
+
+function turnoff(imgName,imgName2)
+ {
+   if (document.images)
+    {
+      imgOff=eval(imgName + "off.src");
+      document[imgName].src= imgOff;
+      imgOff2=eval(imgName2 + "off.src");
+      document[imgName2].src= imgOff2;
+	  imgOff3=eval(imgName3 + "off.src");
+      document[imgName3].src= imgOff3;
+	  imgOff4=eval(imgName4 + "off.src");
+      document[imgName4].src= imgOff4;
+    }
+ }
+
+//-->
+</SCRIPT>
+</head>
+
+<body>
+
+  <header>
+  	<img src="../images/banner.jpg" alt="Arctic Monkeys logo" height="150" width="800">
+	<h2>Photo Gallery</h2>
+  </header>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="../pages/video.html">Videoclips</a>
+    		<ul>
+    			<li><a href="#">AM Album</a></li>
+    			<li><a href="#">Humbug Album</a>
+						<ul>
+							<li><a href="#">Arabella Clip</a></li>
+							<li><a href="#">R U Mine Clip</a></li>
+						</ul>
+				</li>
+    		</ul>
+    	</li>
+    	<li><a href="../pages/image.html" class="current">Photo Gallery</a></li>
+	</ul>
+  </nav>
+  <main>
+	<aside id="sidebarA">
+		<p>
+			<a href="../index.html"><img src="../thumbnails/tb1.png" alt="Photo 1 - Link to Homepage" width="96" height="96"></a><br><figcaption>Visit our Homepage</figcaption>
+			<a href="../pages/video.html"><img src="../thumbnails/tb2.jpg" alt="Photo 2 - Link to Videoclips" width="96" height="96"></a><br><figcaption>Check AM videoclips</figcaption>
+			<a href="../pages/image.html"><img src="../thumbnails/tb3.jpg" alt="Photo 3 - Link to Photo Gallery" width="96" height="96"></a><br><figcaption>Check AM Photo Gallery</figcaption>
+		</p>
+	</aside>
+	<section>
+		<img src="../images/photo1.jpg" alt="Humbug Album" name="pic1" onMouseover="lightup('pic1')" onMouseout="turnoff('pic1')">
+		<figcaption>Humbug Album</figcaption>
+		<img src="../images/photo2.jpg" alt="AM Album" name="pic2" onMouseover="lightup('pic2')" onMouseout="turnoff('pic2')">
+		<figcaption>AM Album</figcaption>
+		<img src="../images/photo3.jpg" alt="Suck it and See Album" name="pic3" onMouseover="lightup('pic3')" onMouseout="turnoff('pic3')">
+		<figcaption>Suck it and See Album</figcaption>
+		<img src="../images/photo4.jpg" alt="Fav Worst Nightmare Album" name="pic4" onMouseover="lightup('pic4')" onMouseout="turnoff('pic4')">
+		<figcaption>Fav Worst Nightmare Album</figcaption>
+	</section>
+	<aside id="sidebarB">
+		<p>Want to see more pictures of the band? Check here links to other photo gallerys:</p>
+		<p><a href="http://www.arcticmonkeys.com/photos.php" target="_blank">AM Gallery</a></p>
+		<p><a href="https://www.instagram.com/_arctic_monkeys_/?hl=e" target="_blank">AM Instagram</a></p>
+	</aside>
+  </main>
+
+  <footer>
+	<p>&copy; 2017 Arctic Monkeys Pagefan -<a href="mailto: ericat.menezes@gmail.com"> Contact us by e-mail</a></p>
+  </footer>
+</body>
+</html>

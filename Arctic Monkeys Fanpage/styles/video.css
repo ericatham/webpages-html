@@ -1,0 +1,57 @@
+body  {
+	font-family: Tahoma, Geneva, sans-serif;
+	width: 800px;
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header img { 
+	float: left; 
+	padding-right: 15px;  
+} 
+header h2 {
+	font-size: 150%;
+	padding: 0 0 0 20px;
+}
+
+/* Section */
+section {
+	width: 380px;
+	height: auto;
+	float: left;
+	padding: 20px 20px 10px 20px;	
+
+}
+section iframe{
+	border: 1px solid black;
+}
+/*Sidebar B*/
+#sidebarB{
+	float:right;
+	width: 120px;
+	height: 460px;
+	padding: 20px 20px 10px 20px;
+	border: 1px solid black;
+}
+#sidebarB p{
+	font-size: 80%;
+	color: black;
+	padding: 10px 0 10px 0;
+}
+#sidebarB a{
+	padding: 20px;
+	text-align: center;
+}
+#sidebarB a:link, main a:visited { 
+    color: #4d4d33;
+}
+#sidebarB a:hover, main a:focus { 
+    color: #9900e6;
